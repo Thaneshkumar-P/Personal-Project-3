@@ -10,3 +10,63 @@
     transform: translateX(-0%)
     transform: translateY(-17%)
     opacity: 2
+
+.left 
+    left: 70%
+
+.left-center
+    top: 30%
+
+.deslide-item .deslide-cover 
+    -webkit-mask-image: linear-gradient(0deg,transparent 0,rgb(36,36,40) 30%,rgb(36,36,40) 70%,transparent)
+    mask-image: linear-gradient(0deg,transparent 0,rgb(36,36,40) 30%,rgb(36,36,40) 70%,transparent)
+
+
+
+@media screen and (max-width: 2560px)
+    .deslide-item .deslide-cover .deslide-cover-img img 
+        object-fit: cover
+        width: 75%
+
+    .slide-img
+        position: relative
+        left: 30%
+        -webkit-mask-image: linear-gradient(270deg,transparent 0,rgb(36,36,40) 30%,rgb(36,36,40) 70%,transparent)
+        -webkit-mask-image: linear-gradient(270deg,transparent 0,rgb(36,36,40) 70%,rgb(36,36,40) 70%,transparent)
+
+    .deslide-wrap 
+        margin-top: -5px
+        margin-bottom: -5px
+
+    .slide-content
+        position: absolute
+        top: 60%
+        left:10%
+        color:#fff
+
+@media screen and (max-width: 1023px)
+    .discrip
+        display: none
+
+    .deslide-item .deslide-cover .deslide-cover-img img 
+        object-fit: cover
+        width: 100%
+        
+    .slide-img
+        //position: relative
+        left: 0%
+        -webkit-mask-image: linear-gradient(270deg,transparent 0,rgb(36,36,40) 30%,rgb(36,36,40) 70%,transparent)
+        -webkit-mask-image: linear-gradient(270deg,transparent 0,rgb(36,36,40) 70%,rgb(36,36,40) 70%,transparent)
+
+    .deslide-wrap 
+        margin-top: -5px
+        margin-bottom: -5px
+
+    .slide-content
+        position: absolute
+        top: 60%
+        left:5%
+        color:#fff
+
+
+
