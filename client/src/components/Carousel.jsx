@@ -1,6 +1,8 @@
-import { useRef } from 'react';
+// import { useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
+import { Navigation , Autoplay } from 'swiper/modules';
+import Icon from '@mdi/react';
+import { mdiChevronLeft , mdiChevronRight } from '@mdi/js';
 import 'swiper/css'
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -12,22 +14,28 @@ import Img3 from '../assets/img/Cimg3.png'
 
 const Carousel = () => {
     // const NavigationNext = useRef(null)
-    // const NavigattionPrev = useRef(null)
+    // const NavigationPrev = useRef(null)
+    // const swiperRef = useSwiper();
     return (
         <div className='deslide-wrap'>
             <Swiper
-            modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+            modules={[Navigation, Autoplay]}
             slidesPerView={1}
             autoplay={{
                 delay: 4000,
                 disableOnInteraction: false
             }}
-            // navigation={{
-            //     nextEl: NavigationNext.current,
-            //     prevEl: NavigattionPrev.current
+            // navigation
+            navigation={{
+                nextEl: '.button-next-slide',
+                prevEl: '.button-prev-slide',
+            }}
+            // onInit={(swiper) => {
+            //     swiper.navigation.nextEl = NavigationNext.current;
+            //     swiper.navigation.prevEl = NavigationPrev.current;
             // }}
-            onSlideChange={() => console.log('slide change')}
-            onSwiper={(swiper) => console.log(swiper)}
+            // onSlideChange={() => console.log('slide change')}
+            // onSwiper={(swiper) => console.log(swiper)}
         >
           <SwiperSlide>
             <div className='deslide-item'>
@@ -107,6 +115,14 @@ const Carousel = () => {
                 </div>
             </div>
           </SwiperSlide>
+          <div className='navigation'>
+                <div className="slider-button button-next-slide ">
+                    <Icon path={mdiChevronRight} size={2} />
+                </div>
+                <div className="slider-button button-prev-slide ">
+                    <Icon path={mdiChevronLeft} size={2} />
+                </div>
+            </div>
         </Swiper>
         </div>
     )
