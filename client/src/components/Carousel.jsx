@@ -10,12 +10,8 @@ import 'swiper/css/scrollbar';
 import Img1 from '../assets/img/Cimg1.png'
 import Img2 from '../assets/img/Cimg2.png'
 import Img3 from '../assets/img/Cimg3.png'
-//import Fade from '../assets/img/Fade.png'
 
 const Carousel = () => {
-    // const NavigationNext = useRef(null)
-    // const NavigationPrev = useRef(null)
-    // const swiperRef = useSwiper();
     return (
         <div className='deslide-wrap'>
             <Swiper
@@ -25,17 +21,10 @@ const Carousel = () => {
                 delay: 4000,
                 disableOnInteraction: false
             }}
-            // navigation
             navigation={{
                 nextEl: '.button-next-slide',
                 prevEl: '.button-prev-slide',
             }}
-            // onInit={(swiper) => {
-            //     swiper.navigation.nextEl = NavigationNext.current;
-            //     swiper.navigation.prevEl = NavigationPrev.current;
-            // }}
-            // onSlideChange={() => console.log('slide change')}
-            // onSwiper={(swiper) => console.log(swiper)}
         >
           <SwiperSlide>
             <div className='deslide-item'>
@@ -128,9 +117,7 @@ const Carousel = () => {
     )
 }
 
-// const Slider = () => {
-
-// }
+// const Slider = () => {}
 
 
 export default Carousel
