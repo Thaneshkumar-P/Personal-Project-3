@@ -15,104 +15,104 @@ const Carousel = () => {
     return (
         <div className='deslide-wrap'>
             <Swiper
-            modules={[Navigation, Autoplay]}
-            slidesPerView={1}
-            autoplay={{
-                delay: 4000,
-                disableOnInteraction: false
-            }}
-            navigation={{
-                nextEl: '.button-next-slide',
-                prevEl: '.button-prev-slide',
-            }}
-        >
-          <SwiperSlide>
-            <div className='deslide-item'>
-                <div className='deslide-cover'>
-                    <div className='deslide-cover-img'>
-                        <img className='slide-img' src={Img1} alt='...'  />
+                modules={[Navigation, Autoplay]}
+                slidesPerView={1}
+                autoplay={{
+                    delay: 4000,
+                    disableOnInteraction: false
+                }}
+                navigation={{
+                    nextEl: '.button-next-slide',
+                    prevEl: '.button-prev-slide',
+                }}
+            >
+            <SwiperSlide>
+                <div className='deslide-item'>
+                    <div className='deslide-cover'>
+                        <div className='deslide-cover-img'>
+                            <img className='slide-img' src={Img1} alt='...'  />
+                        </div>
+                    </div>
+                    <div className='slide-content'>
+                        <small>Text</small>
+                        <div className='pt-1 pb-1'>
+                            <p className='h3'>Hello world</p>
+                            <small className='me-6 discrip'>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quidem doloremque rep 
+                            </small>
+                        </div>
+                        <div>
+                            <button type='button' className='btn btn-primary rounded-pill me-2' >
+                                Learn More...
+                            </button>
+                            <button type='button' className='btn btn-secondary rounded-pill'>
+                                Download
+                            </button>
+                        </div>
                     </div>
                 </div>
-                <div className='slide-content'>
-                    <small>Text</small>
-                    <div className='pt-1 pb-1'>
-                        <p className='h3'>Hello world</p>
-                        <small className='me-6 discrip'>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quidem doloremque rep 
-                        </small>
+            </SwiperSlide>
+            <SwiperSlide>
+                <div className='deslide-item'>
+                    <div className='deslide-cover'>
+                        <div className='deslide-cover-img'>
+                            <img className='slide-img' src={Img2} alt='...' />
+                        </div>
                     </div>
-                    <div>
-                        <button type='button' className='btn btn-primary rounded-pill me-2' >
-                            Learn More...
-                        </button>
-                        <button type='button' className='btn btn-secondary rounded-pill'>
-                            Download
-                        </button>
-                    </div>
-                </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-          <div className='deslide-item'>
-                <div className='deslide-cover'>
-                    <div className='deslide-cover-img'>
-                        <img className='slide-img' src={Img2} alt='...' />
-                    </div>
-                </div>
-                <div className='slide-content'>
-                    <small>Text</small>
-                    <div className='pt-1 pb-1'>
-                        <p className='h3'>Hello world</p>
-                        <small className='me-6 discrip'>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quidem doloremque rep 
-                        </small>
-                    </div>
-                    <div>
-                        <button type='button' className='btn btn-primary rounded-pill me-2' >
-                            Learn More...
-                        </button>
-                        <button type='button' className='btn btn-secondary rounded-pill'>
-                            Download
-                        </button>
+                    <div className='slide-content'>
+                        <small>Text</small>
+                        <div className='pt-1 pb-1'>
+                            <p className='h3'>Hello world</p>
+                            <small className='me-6 discrip'>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quidem doloremque rep 
+                            </small>
+                        </div>
+                        <div>
+                            <button type='button' className='btn btn-primary rounded-pill me-2' >
+                                Learn More...
+                            </button>
+                            <button type='button' className='btn btn-secondary rounded-pill'>
+                                Download
+                            </button>
+                        </div>
                     </div>
                 </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className='deslide-item'>
-                <div className='deslide-cover'>
-                    <div className='deslide-cover-img'>
-                        <img className='slide-img' src={Img3} alt='...' /> 
+            </SwiperSlide>
+            <SwiperSlide>
+                <div className='deslide-item'>
+                    <div className='deslide-cover'>
+                        <div className='deslide-cover-img'>
+                            <img className='slide-img' src={Img3} alt='...' /> 
+                        </div>
+                    </div>
+                    <div className='slide-content'>
+                        <small>Text</small>
+                        <div className='pt-1 pb-1'>
+                            <p className='h3'>Hello world</p>
+                            <small className='me-6 discrip'>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </small>
+                        </div>
+                        <div>
+                            <button type='button' className='btn btn-primary rounded-pill me-2' >
+                                Learn More...
+                            </button>
+                            <button type='button' className='btn btn-secondary rounded-pill'>
+                                Download
+                            </button>
+                        </div>
                     </div>
                 </div>
-                <div className='slide-content'>
-                    <small>Text</small>
-                    <div className='pt-1 pb-1'>
-                        <p className='h3'>Hello world</p>
-                        <small className='me-6 discrip'>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quidem doloremque rep 
-                        </small>
+            </SwiperSlide>
+                <div className='navigation'>
+                    <div className="slider-button button-next-slide ">
+                        <Icon path={mdiChevronRight} size={2} />
                     </div>
-                    <div>
-                        <button type='button' className='btn btn-primary rounded-pill me-2' >
-                            Learn More...
-                        </button>
-                        <button type='button' className='btn btn-secondary rounded-pill'>
-                            Download
-                        </button>
+                    <div className="slider-button button-prev-slide ">
+                        <Icon path={mdiChevronLeft} size={2} />
                     </div>
                 </div>
-            </div>
-          </SwiperSlide>
-          <div className='navigation'>
-                <div className="slider-button button-next-slide ">
-                    <Icon path={mdiChevronRight} size={2} />
-                </div>
-                <div className="slider-button button-prev-slide ">
-                    <Icon path={mdiChevronLeft} size={2} />
-                </div>
-            </div>
-        </Swiper>
+            </Swiper>
         </div>
     )
 }
