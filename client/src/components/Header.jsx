@@ -1,20 +1,29 @@
 import './styles.sass'
+import SearchBar from './SearchBar';
 import Icon from '@mdi/react'
-import { mdiInstagram , mdiTwitter } from "@mdi/js";
+import { mdiClose, mdiInstagram , mdiMagnify, mdiTwitter } from "@mdi/js";
 const Header = () => {
+
     return (
         <div>
             <div className="d-flex bd-highlight mb-0 header">
                 <div className="p-2 flex-grow-1 bd-highlight">Flex item</div>
                 <div className="p-2 bd-highlight header-padding">
-                    <Icon path={mdiInstagram} size={1} /> <a href='https://www.instagram.com/_thaneshkumar/' className='link'>Instgram</a>
+                    <Icon path={mdiInstagram} size={1} className="icon" /> 
+                    {/* <a href='https://www.instagram.com/_thaneshkumar/' className='link'>Instgram</a> */}
                 </div>
                 <div className="p-2 bd-highlight">
-                <Icon path={mdiTwitter} size={1} className='link'/> <a href='https://twitter.com/_thaneshkumar' className='link'>Twitter</a>
+                    <Icon path={mdiTwitter} size={1} className="icon" /> 
+                    {/* <a href='https://twitter.com/_thaneshkumar' className='link'>Twitter</a> */}
                 </div>
             </div>
-            <div className='d-flex border border-primary header ms-5 me-5 overlay rounded-1'>
-                <div className='p-4 flex-grow-1 position-absolute-top top-25 start-50'> </div>
+            <div className='d-flex border border-primary header-nav ms-5 me-5 overlay rounded-1' id='bar'>
+                <div className='d-flex p-1 flex-grow-1 position-absolute-top top-25 start-50 justify-content-center ms-5' >
+                    <div className='pe-2 cont' id='nav1'>Home</div>
+                    <div className='pe-2 cont' id='nav2'>Books</div>
+                    <div className='pe-2 cont' id='nav3'>series</div>
+                </div>
+                <SearchBar />
             </div>
         </div>
     )

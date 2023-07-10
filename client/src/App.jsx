@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import Carousel from "./components/Carousel";
 import DisplayCard from "./components/DisplayCard";
+import SearchBar from "./components/SearchBar";
 import { useEffect } from "react";
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/js/bootstrap'

@@ -105,10 +105,10 @@ const Carousel = () => {
                 </div>
             </SwiperSlide>
                 <div className='navigation'>
-                    <div className="slider-button button-next-slide ">
+                    <div className="slider-button button-next-slide">
                         <Icon path={mdiChevronRight} size={2} />
                     </div>
-                    <div className="slider-button button-prev-slide ">
+                    <div className="slider-button button-prev-slide">
                         <Icon path={mdiChevronLeft} size={2} />
                     </div>
                 </div>
