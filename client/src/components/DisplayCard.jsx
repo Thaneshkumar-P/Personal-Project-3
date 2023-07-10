@@ -21,7 +21,8 @@ const DisplayCard = () => {
                     </div>
                 </div>
                 <div className="Cards">
-                    <div className="d-flex ps-5 justify-content-evenly flex-warp align-content-between">
+                    <div>
+                    <div className="d-flex ps-5 me-5 line-break align-content-between">
                         <Card 
                             img={Card1}
                             title="One Piece" 
@@ -42,6 +43,27 @@ const DisplayCard = () => {
                             title="Hell's Paradise" 
                             Ecount="12" 
                             status="Completed" />
+                        <Card 
+                            img={Card1}
+                            title="One Piece" 
+                            Ecount="1068" 
+                            status="OnGoing" />
+                        <Card 
+                            img={Card2}
+                            title="Jujutsu Kaisen" 
+                            Ecount="25" 
+                            status="OnGoing" />
+                        <Card 
+                            img={Card3}
+                            title="Demon Slayer" 
+                            Ecount="11" 
+                            status="Completed" />
+                        <Card 
+                            img={Card4}
+                            title="Hell's Paradise" 
+                            Ecount="12" 
+                            status="Completed" />
+                    </div>
                     </div>
                 </div>
             </div>
