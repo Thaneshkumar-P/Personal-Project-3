@@ -1,4 +1,4 @@
-import { mdiClose, mdiMagnify } from '@mdi/js';
+import { mdiMagnify } from '@mdi/js';
 import './styles.sass'
 import Icon from '@mdi/react';
 
