@@ -1,5 +1,6 @@
 import Header from "./components/Header";
 import Carousel from "./components/Carousel";
+import Comments from "./components/Comments";
 import DisplayCard from "./components/DisplayCard";
 import { useEffect } from "react";
 import 'bootstrap/dist/css/bootstrap.css'
@@ -20,9 +21,10 @@ const App = () => {
 
   return (
     <>
-      <Header />
+      {/* <Header />
       <Carousel />
-      <DisplayCard />
+      <DisplayCard /> */}
+      <Comments />
     </>
   )
 }
