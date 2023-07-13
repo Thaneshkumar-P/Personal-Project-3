@@ -21,9 +21,9 @@ const App = () => {
 
   return (
     <>
-      {/* <Header />
+      <Header />
       <Carousel />
-      <DisplayCard /> */}
+      <DisplayCard />
       <Comments />
     </>
   )
