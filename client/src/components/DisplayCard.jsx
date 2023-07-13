@@ -22,7 +22,7 @@ const DisplayCard = () => {
                 </div>
                 <div className="Cards">
                     <div>
-                    <div className="d-flex ps-5 me-5 line-break align-content-between">
+                    <div className="d-flex ps-5 me-5 line-break justify-content-evenly align-content-between">
                         <Card 
                             img={Card1}
                             title="One Piece" 

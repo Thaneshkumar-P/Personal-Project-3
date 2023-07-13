@@ -49,7 +49,7 @@ const Comments = () => {
                             800 : {slidesPerView: 3},
                             630 : { slidesPerView: 2}
                         }}
-                        spaceBetween={10}
+                        spaceBetween={15}
                     >
                             <SwiperSlide>
                                 <div className='comments-slide-deslide'>
@@ -188,7 +188,7 @@ const Comments = () => {
                             800 : {slidesPerView: 3},
                             630 : { slidesPerView: 2}
                         }}
-                        spaceBetween={10}
+                        spaceBetween={15}
                     >
                             <SwiperSlide>
                                 <div className='comments-slide-deslide'>

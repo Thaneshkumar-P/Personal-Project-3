@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import Carousel from "./components/Carousel";
 import Comments from "./components/Comments";
 import DisplayCard from "./components/DisplayCard";
+import Footer from "./components/Footer";
 import { useEffect } from "react";
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/js/bootstrap'
@@ -25,6 +26,7 @@ const App = () => {
       <Carousel />
       <DisplayCard />
       <Comments />
+      <Footer />
     </>
   )
 }
