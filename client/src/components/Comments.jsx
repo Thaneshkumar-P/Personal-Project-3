@@ -41,7 +41,7 @@ const Comments = () => {
                 
             </div>
             <div>
-            <div id="top-comments-content" className="comments-topc-cont active">
+            <div id="top-comments-content" className="comments-topc-cont">
                 <div className="ms-5 me-5">
                     <Swiper
                         breakpoints={{
@@ -180,7 +180,7 @@ const Comments = () => {
                     </Swiper>
                 </div>
             </div>
-            <div id="recent-comments-content" className="comments-rectc-cont">
+            <div id="recent-comments-content" className="comments-rectc-cont active">
                 <div className="ms-5 me-5">
                     <Swiper
                         breakpoints={{
